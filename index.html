@@ -43,18 +43,43 @@
             border: none; /* Rimuove i bordi predefiniti */
             background-color: #000; /* Colore della linea */
         }
+        /* Contenitore per i link delle lingue */
+        .language-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5; /* Colore di sfondo del contenitore (facoltativo) */
+        }
+
+        /* Stile dei link delle lingue */
+        .language-links a {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Stile delle immagini delle bandiere */
+        .language-links img {
+            width: 20px;
+            height: 15px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
          <!-- Link alla pagina in italiano con bandierina -->
-        <a href="pagina-italiano.html">
+        <a href="it.html">
             <img src="bandiera-italia.png" alt="Italiano" width="30" height="20">
             Italiano
         </a>
 
         <!-- Link alla pagina in inglese con bandierina -->
-        <a href="pagina-inglese.html">
+        <a href="en.html">
             <img src="bandiera-inglese.png" alt="Inglese" width="30" height="20">
             Inglese
         </a>
