@@ -38,14 +38,28 @@
        /*     padding: 20px; 
         } */
         
-        .container {
+        /*.container {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
+        } */
+        .container {
+                    display: flex;
+                    flex-direction: column; /* Dispone gli elementi in colonna */
+                    align-items: center;    /* Centra gli elementi orizzontalmente */
+                    justify-content: center; /* Centra gli elementi verticalmente */
+                    min-height: 100vh;      /* Assicura che il contenitore occupi l'intera altezza della viewport */
+                    text-align: center;
+        }
+        .progress-text {
+                        color: #fff;
+                        font-size: 24px;          /* Regola la dimensione del font secondo le tue preferenze */
+                        text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+                        margin-top: 20px;         /* Aggiunge uno spazio sopra il testo */
         }
         h1 {
             /* color: #333; */
-            color: #fff
+            color: #fff;
             font-size: 48px;
         }
         img {
@@ -120,7 +134,8 @@
 
     <div class="container">      
         <h1>Andrea Rubino</h1>
-        <img src="Immagine1.png" alt="Andrea Rubino">        
+        <img src="Immagine1.png" alt="Andrea Rubino">
+        <h2 class="progress-text">Page still in progress</h2>
     </div>
 </body>
 </html>
