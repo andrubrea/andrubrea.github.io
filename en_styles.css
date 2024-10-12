@@ -1,0 +1,301 @@
+/* Stile per il body con immagine di sfondo (immagine A) */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Imposta uno sfondo bianco o un altro colore */
+}
+
+.home-page {
+    position: relative;
+    height: 25vh; /* Imposta l'altezza al 25% dell'altezza della viewport */
+    background-image: url('pexels-pixabay-41951.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+}
+
+
+/* Contenitore per immagine B e testo 'ciao' */
+.header-content {
+    text-align: center;
+    padding-top: 20px; /* Regola lo spazio superiore secondo le tue esigenze */
+}
+
+/* Stile per l'immagine B */
+.image-b {
+    width: 150px; /* Regola la dimensione secondo le tue preferenze */
+    height: auto;
+}
+
+/* Stile per il testo 'ciao' */
+.greeting-text {
+    color: #172C51;
+    text-shadow:
+        -1px -1px 0 #F04E41,
+         1px -1px 0 #fff,
+        -1px  1px 0 #F04E41,
+         1px  1px 0 #fff;
+    font-size: 48px;
+    margin-bottom: 20px; /* Aggiunge spazio sotto il testo */
+}
+
+/* Stile per il box contenuto */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.4); /* Colore bianco con opacità al 40% */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Il box occupa l'80% della larghezza della pagina */
+    max-width: 800px; /* Larghezza massima del box */
+    border-radius: 8px; /* Angoli arrotondati (opzionale) */
+    color: #172C51; /* Colore del testo all'interno del box */
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Stile per il contenitore dei link delle sezioni */
+.section-links {
+    margin: 40px auto;
+    max-width: 1200px; /* Opzionale: imposta una larghezza massima */
+}
+
+/* Grid Container per le prime 8 sezioni */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonne di uguale larghezza */
+    grid-template-rows: repeat(2, auto);   /* 2 righe */
+    gap: 15px;
+    justify-items: center; /* Centra i link nelle celle */
+    align-items: center;
+}
+
+/* Stile per i link delle sezioni */
+.grid-container a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #172C51;
+    font-size: 18px;
+    padding: 15px 10px;
+    border: 1px solid #172C51;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Link singolo per l'ultima sezione */
+.single-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.single-link a {
+    display: block;
+    width: calc(25% - 15px); /* Stessa larghezza degli altri link */
+    max-width: 200px;        /* Limite massimo di larghezza (opzionale) */
+    text-decoration: none;
+    color: #172C51;
+    font-size: 18px;
+    padding: 15px 10px;
+    border: 1px solid #172C51;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Effetto hover sui link */
+.grid-container a:hover,
+.single-link a:hover {
+    background-color: #172C51;
+    color: #fff;
+}
+
+/* Media query per schermi medi */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    }
+    .single-link a {
+        width: calc(50% - 15px); /* Adatta la larghezza */
+    }
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 colonna */
+    }
+    .single-link a {
+        width: 100%;
+    }
+}
+
+/* Stile per il link singolo centrato sotto la griglia */
+.single-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.discover-link {
+    grid-column: 1 / span 4; /* L'ultimo link occupa tutte e 4 le colonne */
+    justify-self: center;    /* Centra il link all'interno della griglia */
+}
+
+
+/* Sezione superiore */
+.top-section {
+    position: relative;
+    height: 25vh; /* Altezza della sezione superiore: 1/4 della pagina */
+    background-image: url('ANDREA.PNG'); /* Immagine di sfondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #F04E41,
+         1px -1px 0 #172C51,
+        -1px  1px 0 #F04E41,
+         1px  1px 0 #172C51;
+    /* font-size: 48px; */
+    /* margin-bottom: 2 */
+    /* text-shadow: 1px 1px 2px rgba(0,0,0,0.7); */
+    font-size: 46px;
+    margin: 0;
+}
+
+/* Contenuto principale */
+.main-content {
+    padding: 20px 40px;
+    padding-bottom: 60px;
+}
+
+.bullet-point {
+    position: relative; /* Necessario per posizionare l'indicatore */
+    padding-left: 30px; /* Spazio a sinistra per l'indicatore */
+    margin-bottom: 20px;
+}
+
+/* Indicatore (pallino o quadrato) */
+.bullet-point::before {
+    content: ''; /* Contenuto vuoto per l'indicatore */
+    position: absolute;
+    left: 0;
+    top: 6px; /* Regola questa posizione verticale secondo necessità */
+    width: 15px; /* Dimensione dell'indicatore */
+    height: 15px;
+    /* background-image: url('galassia.jpeg'); Percorso all'immagine */
+    /* background-size: contain; Adatta l'immagine alle dimensioni del contenitore */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-color: #F04E41; /* Colore dell'indicatore */
+    border-radius: 50%; /* Cambia a 0 per un quadrato */
+    border: 1px solid #172C51;
+}
+
+.bullet-point h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #172C51;
+}
+
+.bullet-point h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.bullet-point p {
+    margin: 5px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Stile per il footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Stile per la navigazione nel footer */
+.footer-nav {
+    display: block; /* Consente al contenuto di espandersi oltre la larghezza della finestra */
+}
+
+.navigation-menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap; /* Impedisce l'andata a capo delle voci */
+    margin: 0;
+    padding: 10px;
+    width: max-content; /* Consente al contenitore di adattarsi alla larghezza del contenuto */
+}
+
+.navigation-menu li {
+    flex-shrink: 0; /* Impedisce il restringimento delle voci */
+    margin: 0 10px;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #172C51;
+    font-size: 14px;
+    white-space: nowrap; /* Impedisce l'andata a capo del testo */
+    transition: color 0.3s;
+}
+
+.navigation-menu a:hover {
+    color: #F04E41;
+}
+
+/* Stile per la lista dei dettagli */
+.details-list {
+    list-style-type: disc; /* Usa 'disc' per i pallini standard o 'dash' per i trattini */
+    margin-left: 20px;     /* Aggiunge un margine sinistro per l'indentazione */
+    padding-left: 0;
+}
+
+.details-list li {
+    margin-bottom: 5px;    /* Spazio tra gli elementi dell'elenco */
+    /* font-style: italic;    Applica il corsivo agli elementi */
+}
+
+/* Stile per il contenitore flessibile */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Allinea gli elementi all'inizio verticalmente */
+    margin-top: 10px;
+}
+
+/* Stile per l'immagine */
+.side-image {
+    width: 150px; /* Imposta la larghezza desiderata per l'immagine */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin-right: 20px; /* Spazio tra l'immagine e la lista */
+}
+

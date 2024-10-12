@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Rubino</title>
+    <style>
+        /* Stile del body */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        body {
+           /* background-color: #000; /* Imposta il colore di sfondo in nero */
+             background-image: url('pexels-pixabay-41951.jpg'); 
+            /* Imposta l'immagine di sfondo (commenta la riga precedente e scommenta questa per utilizzarla) */
+            background-size: cover; /* Dimensiona l'immagine di sfondo per coprire l'intera area */
+            background-position: center; /* Centra l'immagine di sfondo */
+            background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */
+            color: #fff; /* Imposta il colore del testo in bianco per una migliore leggibilità */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Stile dell'header */
+        /* header {
+            background-color: #fff; /* Imposta il colore di sfondo dell'header in bianco */
+         /*   color: #000; /* Imposta il colore del testo nell'header in nero */
+        /*    padding: 20px;
+        }
+
+        /* Stile del footer */
+       /* footer {
+            background-color: #fff; /* Imposta il colore di sfondo del footer in bianco */
+       /*     color: #000; /* Imposta il colore del testo nel footer in nero */
+       /*     padding: 20px; 
+        } */
+        
+        /*.container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        } */
+        .container {
+                    display: flex;
+                    flex-direction: column; /* Dispone gli elementi in colonna */
+                    align-items: center;    /* Centra gli elementi orizzontalmente */
+                    justify-content: center; /* Centra gli elementi verticalmente */
+                    min-height: 100vh;      /* Assicura che il contenitore occupi l'intera altezza della viewport */
+                    text-align: center;
+        }
+        .progress-text {
+                        color: #fff;
+                        font-size: 24px;          /* Regola la dimensione del font secondo le tue preferenze */
+                        text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+                        margin-top: 20px;         /* Aggiunge uno spazio sopra il testo */
+        }
+        h1 {
+            /* color: #333; */
+            color: #fff;
+            font-size: 48px;
+        }
+        img {
+            width: 200px; /* Imposta la larghezza desiderata */
+            height: 200px; /* Imposta l'altezza desiderata */
+            object-fit: fill; /* Riempi l'area senza deformare l'immagine */
+            border-radius: 50%; /* Imposta la forma dell'immagine (in questo caso, un cerchio) */
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .giustificato {
+            text-align: justify;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            width: 100%; /* Larghezza della linea (100% per l'intera pagina) */
+            height: 5px; /* Altezza della linea (puoi modificarla in base alle tue preferenze) */
+            border: none; /* Rimuove i bordi predefiniti */
+            background-color: #000; /* Colore della linea */
+        }
+        /* Contenitore per i link delle lingue */
+        .language-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5; /* Colore di sfondo del contenitore (facoltativo) */
+        }
+
+        /* Stile dei link delle lingue */
+        .language-links a {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Stile delle immagini delle bandiere */
+        .language-links img {
+            width: 20px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="language-links">
+        <!-- Link alla pagina in italiano con bandierina -->
+        <a href="it.html">
+            <img src="bandiera-italia.png" alt="IT">
+            IT
+        </a>
+
+        <!-- Link alla pagina in inglese con bandierina -->
+        <a href="en.html">
+            <img src="bandiera-inglese.png" alt="EN">
+            EN
+        </a>
+    </div>
+    </header>
+
+    <div class="container">      
+        <h1>Andrea Rubino</h1>
+        <img src="Immagine1.png" alt="Andrea Rubino">
+        <h2 class="progress-text">Page still in progress</h2>
+    </div>
+</body>
+</html>
