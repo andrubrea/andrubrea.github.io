@@ -174,7 +174,7 @@ html, body {
 .top-section {
     position: relative;
     height: 25vh; /* Altezza della sezione superiore: 1/4 della pagina */
-    background-image: url('ANDREA.png'); /* Immagine di sfondo */
+    background-image: url('ANDREA.jpg'); /* Immagine di sfondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
