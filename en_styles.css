@@ -122,7 +122,19 @@ html, body {
     .single-link a {
         width: calc(50% - 15px); /* Adatta la larghezza */
     }
+    footer {
+        padding: 20px 0; /* Aumenta ulteriormente l'altezza del footer */
+    }
+    
+    .navigation-menu {
+        padding: 15px 20px; /* Aumenta il padding interno per facilitare il tocco */
+    }
+
+    .navigation-menu a {
+        font-size: 18px; /* Ingrandisce il testo per una migliore leggibilità su mobile */
+    }
 }
+
 
 /* Media query per schermi piccoli */
 @media (max-width: 480px) {
@@ -132,7 +144,19 @@ html, body {
     .single-link a {
         width: 100%;
     }
+    footer {
+        padding: 20px 0; /* Aumenta ulteriormente l'altezza del footer */
+    }
+    
+    .navigation-menu {
+        padding: 15px 20px; /* Aumenta il padding interno per facilitare il tocco */
+    }
+
+    .navigation-menu a {
+        font-size: 18px; /* Ingrandisce il testo per una migliore leggibilità su mobile */
+    }
 }
+
 
 /* Stile per il link singolo centrato sotto la griglia */
 .single-link {
@@ -240,6 +264,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    padding: 15px 0;
 }
 
 /* Stile per la navigazione nel footer */
@@ -252,7 +277,7 @@ footer {
     display: flex;
     flex-wrap: nowrap; /* Impedisce l'andata a capo delle voci */
     margin: 0;
-    padding: 10px;
+    padding: 10px 20px;
     width: max-content; /* Consente al contenitore di adattarsi alla larghezza del contenuto */
 }
 
@@ -264,7 +289,7 @@ footer {
 .navigation-menu a {
     text-decoration: none;
     color: #172C51;
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap; /* Impedisce l'andata a capo del testo */
     transition: color 0.3s;
 }
