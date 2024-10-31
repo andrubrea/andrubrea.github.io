@@ -9,7 +9,7 @@ html, body {
 .home-page {
     position: relative;
     height: 25vh; /* Imposta l'altezza al 25% dell'altezza della viewport */
-    background-image: url('pexels-pixabay-41951.webp');
+    background-image: url('pexels-pixabay-41951.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ html, body {
 .top-section {
     position: relative;
     height: 25vh; /* Altezza della sezione superiore: 1/4 della pagina */
-    background-image: url('ANDREA.webp'); /* Immagine di sfondo */
+    background-image: url('ANDREA.png'); /* Immagine di sfondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
