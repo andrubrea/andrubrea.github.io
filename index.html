@@ -2,120 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensure proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Rubino</title>
     <style>
-/* Reset margins and paddings */
-html,
-body {
+        /* Reset dei margini e padding */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
-/* Body styling */
+/* Stile del body */
 body {
-    background-image: url('1.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
+    background-color: #000; /* Sfondo nero */
     font-family: Arial, sans-serif;
+    color: #fff;
+    min-height: 100vh;
 }
 
-/* Container styling */
-.container {
+/* Contenitore principale */
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align items to the top */
-    min-height: 100vh;
-    text-align: center;
-    padding-top: 50px; /* Add top padding to move content higher */
-}
-
-/* Heading styles */
-h1 {
-    color: #172C51;
-    text-shadow:
-        -1px -1px 0 #F04E41,
-         1px -1px 0 #fff,
-        -1px  1px 0 #F04E41,
-         1px  1px 0 #fff;
-    font-size: 48px;
-    margin-bottom: 20px; /* Add some space below the heading */
-}
-
-/* Image styling */
-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Progress text styling */
-.progress-text {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-/* Language links container */
-.language-links {
-    position: fixed;       /* O absolute, a seconda delle tue preferenze */
-    top: 75vh;             /* O top: 75%; se usi position: absolute; */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
     justify-content: center;
-    align-items: center;
+    min-height: 100vh; /* Assicura che il contenuto riempia l'altezza della finestra */
+}
+
+/* Stile dell'immagine principale */
+.main-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Impedisce all'immagine di superare la larghezza del contenitore */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenitore del pulsante 'ENTER' */
+.language-links {
     margin-top: 20px;
 }
 
-/* Language link styling */
+/* Stile del link 'ENTER' */
 .language-links a {
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
-/* Flag image styling */
-.language-links img {
-    width: 40px;
-    height: 30px;
-    margin-right: 8px;
+/* Effetto hover sul link */
+.language-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Link hover effect */
-a:hover {
-    text-decoration: underline;
+/* Regolazioni per dispositivi mobili */
+@media only screen and (max-width: 600px) {
+    .language-links a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
-
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- <img src="Immagine1.png">       -->
-        <!-- <h1>Andrea Rubino</h1> -->
-        <!-- <h2 class="progress-text">Page still in progress</h2> -->
+    <div class="content">
+        <img src="1.png" alt="Main Image" class="main-image">
         <div class="language-links">
-            <!-- Link to the Italian page with flag -->
-            <!-- <a href="it.html">
-                <img src="bandiera-italia.png" alt="IT">
-                IT
-            </a> -->
-
-            <!-- Link to the English page with flag -->
-            <a href="en.html">
-                <!-- <img src="bandiera-inglese.png" alt="EN"> -->
-                ENTER
-            </a>
+            <a href="en.html">ENTER</a>
         </div>
     </div>
 </body>
